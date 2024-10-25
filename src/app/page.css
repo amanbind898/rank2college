@@ -1,0 +1,300 @@
+/* Existing CSS */
+/* font import poppins */
+/* in global css  */
+:root {
+    --background: #fbf3f3;
+    --foreground: #1E2A38;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    position: relative;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--background);
+    color: #171717; 
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px;
+    background-color:var(--foreground);
+    color: white;
+    text-align: center;
+}
+
+.navbar .logo h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.navbar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.navbar p {
+    font-size: 0.9rem;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo:hover {
+    color: #fddd60;
+    cursor: pointer;
+}
+
+/* form */
+.form-container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #007bff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.form-group div {
+    display: flex;
+    gap: 10px;
+}
+input[type="radio"] {
+    /* Default styles */
+    width: auto;
+    margin-right: 5px;
+    border: 2px solid #e9c32b;
+    appearance: none; /* Removes default styling in modern browsers */
+    border-radius: 50%; /* Makes the border round */
+    width: 20px; /* Sets the width of the radio button */
+    height: 20px; /* Sets the height of the radio button */
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    /* Styles for checked state */
+    background-color: #e9c32b; /* Background color when checked */
+    border-color: #e9c32b; /* Border color when checked */
+}
+
+input[type="radio"]::before {
+    /* Inner circle */
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px; /* Size of inner circle */
+    height: 10px; /* Size of inner circle */
+    background-color: rgb(0, 0, 0); /* Inner circle color */
+    border-radius: 50%; /* Makes the inner circle round */
+    transform: translate(-50%, -50%) scale(0); /* Centers and hides the inner circle */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for inner circle */
+}
+
+input[type="radio"]:checked::before {
+    /* Inner circle for checked state */
+    transform: translate(-50%, -50%) scale(1); /* Shows the inner circle */
+}
+
+/* Button styles */
+
+button.btn {
+    display: block; /* Ensures the button takes the full width when centering */
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* This will center the button horizontally */
+    padding: 15px;
+    background-color: #fddd60;
+    color: rgb(25, 14, 14);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+button.btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transform: scale(1.02);
+    transition: all 0.3s;
+    background-color: #e9c32b;
+    color: #1E2A38;
+}
+
+button.btn:active {
+    transform: scale(1);
+}
+
+/* make h2 center */
+#cntr h2 {
+    text-align: center;
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results li {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #1e1313;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+/* Institute type */
+#rd {
+    color: #ddd;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0px 5px;
+    border-radius: 5px;
+    background-color: #333;
+
+}
+
+
+/* Institute name */
+.institute-name {
+    color:#086724;
+    border-radius: 5px;  
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Detail labels */
+.branch {
+    font-weight: bold;
+    color: #1e1313;
+    background-color: #fddd605c;
+}
+.detail {
+    font-weight:500;
+    color: #321d1d;
+}
+
+
+
+/* Breaks to separate details */
+.college-list-item br {
+    display: block;
+    margin-top: 5px;
+}
+
+
+
+
+/* Base footer styles */
+
+
+
+
+@media (max-width: 768px) {
+    .form-container {
+        margin-top: 0;
+        padding: 20px;
+    
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input,
+    select {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* probability tag added by Poonam Mahawar */
+.probability-tag {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.very-high-probability {
+    background-color: green;
+    color: white;
+}
+
+.high-probability {
+    background-color: lightgreen;
+    color: black;
+}
+
+.medium-probability {
+    background-color: orange;
+    color:rgb(246, 233, 209);
+}
+
+.low-probability {
+    background-color: red;
+    color: rgb(255, 218, 197);
+}
+
+
+#result-box{
+    display: flex;
+   
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
