@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-section about">
           <h3>About Us</h3>
           <p>
-            College Nexus is your ultimate guide to finding the best colleges and programs.
+          Rank2College is a powerful college predictor tool specifically designed for JEE Main 2024 candidates. It uses user rank, category, domicile, and other preferences to filter eligible colleges from the official JoSAA 2024 data. With a streamlined UI and detailed results, it provides students with a reliable reference for college admissions.
             <br />
             Stay connected with us for the latest updates and information.
           </p>
