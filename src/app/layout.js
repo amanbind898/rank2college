@@ -3,7 +3,10 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Faqs from "@/components/Faqs";
 import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -27,6 +30,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
+        <HeroSection />
+      
         {children}
         <Faqs />
         <Footer />

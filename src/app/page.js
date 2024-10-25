@@ -2,6 +2,9 @@
 //css 
 import './page.css';
 import { useState } from 'react';
+import GoDownButton from '@/components/GoDownButton';
+import { toast } from 'react-toastify';
+
 //how to know path of this page
 
 export default function Home() {
@@ -27,6 +30,7 @@ export default function Home() {
   const predictCollege = async () => {
     setError('');
     setEligibleColleges([]);
+    
     setIsLoading(true);
 
     try {
@@ -51,6 +55,8 @@ export default function Home() {
       }
     } catch (error) {
       setError('Error fetching data');
+      toast.error("An error occurred. Please try again.");
+
       setIsLoading(false);
     } finally {
       setIsLoading(false);
@@ -248,7 +254,7 @@ export default function Home() {
               <label htmlFor="femaleOnly">Female-only</label>
             </div>
           </div>
-
+          <GoDownButton />
           <button className='btn' type="button" onClick={predictCollege} disabled={isLoading}>
             {isLoading ? 'Predicting...' : 'Predict My Colleges'}
           </button>

@@ -1,0 +1,65 @@
+/* HeroSection.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+.hero-section {
+    background: linear-gradient(to right, #004d99, #007acc);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    font-weight: 500;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    color: #f2f2f2;
+    line-height: 1.6;
+  }
+  
+  .highlight {
+    color: #ffe066;
+    font-weight: bold;
+  }
+  
+  .hero-extra {
+    font-family: "Playwrite GB S", cursive;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-style: italic;
+    color: #e6e6e6;
+  }
+  
+  .hero-button {
+    margin-top: 50px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #004d99;
+    background-color: #ffe066;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .hero-button:hover {
+    background-color: #ffcc00;
+  }
+  
