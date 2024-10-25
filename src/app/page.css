@@ -22,36 +22,7 @@ body {
     min-height: 100vh;
 }
 
-.navbar {
-    width: 100%;
-    padding: 20px;
-    background-color:var(--foreground);
-    color: white;
-    text-align: center;
-}
 
-.navbar .logo h1 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.navbar h2 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-
-.navbar p {
-    font-size: 0.9rem;
-}
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo:hover {
-    color: #fddd60;
-    cursor: pointer;
-}
 
 /* form */
 .form-container {
@@ -165,12 +136,13 @@ button.btn:active {
     text-align: center;
 }
 
-#results ul {
-    list-style-type: none;
+#results ol {
+    list-style-type: auto;
     padding: 0;
 }
 
 #results li {
+    list-style: auto;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
@@ -181,6 +153,9 @@ button.btn:active {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
+#results ol li::marker{
+    font-size: 0.05em;
+}
 
 
 
@@ -190,6 +165,7 @@ button.btn:active {
     color: #ddd;
     font-size: 1.2em;
     font-weight: bold;
+    margin-left: 5px;
     padding: 0px 5px;
     border-radius: 5px;
     background-color: #333;
@@ -289,12 +265,17 @@ button.btn:active {
 
 
 #result-box{
+    max-width: 960px;
     display: flex;
-   
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin-top: 20px;
-    padding: 20px;
+padding-left: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
+}
+li.college-list-item::marker{
+    font-size: 0.75em;
 }

@@ -2,6 +2,7 @@
 //css 
 import './page.css';
 import { useState } from 'react';
+//how to know path of this page
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -141,16 +142,8 @@ export default function Home() {
     }
   };
   return (
-    <div>
-      <div className="navbar" >
-        <div className="left">
-          <div className="logo">
-            <h1>Rank2College</h1>
-          </div>
-          <h2>JEE Main 2024 College Predictor</h2>
-          <p>Data Source: JoSAA (2024) 5th round</p>
-        </div>
-      </div>
+    <div className="grid place-items-center justify-center">
+    
 
       <div className="form-container">
         <form onSubmit={(e) => e.preventDefault()}>
@@ -287,6 +280,7 @@ export default function Home() {
 
       return (
         <li key={index} className="college-list-item">
+         
           <strong id="rd">{college['Institute Type']}</strong> - <span className="institute-name">{college['Institute']}</span>
           <br/><span className="branch">{college['Academic Program Name']}</span>
           <br/><span className="detail">Quota: {college['Quota']}</span>
