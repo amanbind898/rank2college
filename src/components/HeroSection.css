@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
 .hero-section {
-    background: linear-gradient(to right, #004d99, #007acc);
+  height: 90vh;
+    background: linear-gradient(to right, #004d99,#036bda, #004d99);
     color: #fff;
     padding: 60px 20px;
     text-align: center;
@@ -39,10 +40,13 @@
   }
   
   .hero-extra {
-    font-family: "Playwrite GB S", cursive;
+    font-family: 'Playwrite GB S';
+    font-style: italic;
+    font-weight: 100 400;
+    font-display: swap;
     font-size: 1.5rem;
     margin-top: 20px;
-    font-style: italic;
+   
     color: #e6e6e6;
   }
   
@@ -52,7 +56,7 @@
     font-size: 1rem;
     font-weight: bold;
     color: #004d99;
-    background-color: #ffe066;
+    background-color: #FFC107;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -61,5 +65,7 @@
   
   .hero-button:hover {
     background-color: #ffcc00;
+    scale: 1.02;
+
   }
   

@@ -66,14 +66,14 @@ const Faqs = () => {
             <li>Click on the "Predict My Colleges" button to see the eligible colleges.</li>
         </ol>
       </div>
-      <h2 className="text-xl font-bold mb-8 text-center">
+      <h2 className="text-xl font-bold mb-8 text-center text-black">
         Frequently Asked Questions
       </h2>
       <div className="space-y-4">
         {faqsData.map(({ id, question, answer }) => (
           <div
             key={id}
-            className="border rounded-lg overflow-hidden shadow-sm"
+            className="border border-black border-spacing-0.5 rounded-lg overflow-hidden shadow-sm"
            style={{backgroundColor: "#007bff"}}
           >
             <button

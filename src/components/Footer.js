@@ -19,9 +19,8 @@ function Footer() {
           <h3>Important Links</h3>
           <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="https://college-nexus.onrender.com/#contact">Contact</a></li>
-            <li><a href="/pages/privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="https://college-nexus.onrender.com/pages/privacypolicy.html">Privacy Policy</a></li>
           </ul>
         </div>
         
@@ -29,7 +28,7 @@ function Footer() {
           <h3>Follow us on:</h3>
           <div className='social-icons-group'>
           <a href="#" className="icon"><FaFacebookF /></a>
-          <a href="#" className="icon"><FaTwitter /></a>
+          <a href="https://x.com/akb898" className="icon"><FaTwitter /></a>
           <a href="https://www.instagram.com/infincodes/" className="icon"><FaInstagram /></a>
           <a href="https://www.linkedin.com/in/aman-bind-306152289" className="icon"><FaLinkedinIn /></a>
           </div>
@@ -37,7 +36,7 @@ function Footer() {
       </div>
       
       <div className="footer-bottom">
-        &copy; 2024 College Nexus by Aman Bind. All rights reserved.
+        &copy; 2024 Rank2College by Aman Bind. All rights reserved.
       </div>
     </div>
   );

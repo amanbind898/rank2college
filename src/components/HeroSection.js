@@ -17,7 +17,7 @@ export default function HeroSection() {
           <span className="highlight"> easy to use</span>.
         </p>
         <p className="hero-extra">No login required and no data tracking!</p>
-        <button className="hero-button" onClick={() => window.location.href = '#predictor'}>
+        <button className="hero-button" onClick={() => document.getElementById('predictor').scrollIntoView({ behavior: 'smooth' })}>
           Try It Now
         </button>
       </div>

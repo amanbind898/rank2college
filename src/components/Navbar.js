@@ -24,7 +24,7 @@ export default function Navbar() {
           <a href="#home">Home</a>
           <a href="#predictor">Predictor</a>
           <a href="#faq-section">FAQ</a>
-          <a href="#contact">Contact</a>
+          <a href="#footer">Contact</a>
         </nav>
       </div>
     </div>

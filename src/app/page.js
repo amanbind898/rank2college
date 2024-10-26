@@ -88,7 +88,7 @@ export default function Home() {
       // Create the eligibility message
       const message = `Showing ${homeStateColleges.length+otherStateColleges.length} eligible options. The data is taken from the official JoSAA website and is updated till 2024 round 5.<br><br>` +
         `Please note:<br>` +
-        `1. Since you have selected your home state (domicile) as ${formData.domicile}, only HOME STATE (HS) quota colleges in ${formData.domicile} are shown first. HS quota for other states is not displayed.<br>` +
+        `1. Since you have selected your home state (domicile) as <span className="high-light">${formData.domicile}</span>, only HOME STATE (HS) quota colleges in ${formData.domicile} are shown first. HS quota for other states is not displayed.<br>` +
         `2. If you do not see any colleges in your home state, it means you're not eligible for the colleges as per applied filters and CRL under HS quota. Eligible colleges from other states will be displayed if any.`;
   
       setEligibleMessage(message);
@@ -99,7 +99,7 @@ export default function Home() {
       if (homeStateColleges.length > 0) {
         combinedColleges.push({
           isHeader: true,
-          text: `Home State Colleges (${formData.domicile})`
+          text: `Home State Colleges (${formData.domicile} :)`
         });
         combinedColleges.push(...homeStateColleges);
       } else {
@@ -112,7 +112,7 @@ export default function Home() {
       if (otherStateColleges.length > 0) {
         combinedColleges.push({
           isHeader: true,
-          text: 'Other State Colleges'
+          text: 'Other State Colleges :'
         });
         combinedColleges.push(...otherStateColleges);
       }
@@ -148,7 +148,7 @@ export default function Home() {
     }
   };
   return (
-    <div className="grid place-items-center justify-center">
+    <div id="predictor" className="grid place-items-center justify-center">
     
 
       <div className="form-container">
@@ -269,12 +269,12 @@ export default function Home() {
 <div id="result-box">
 
 <div id="eligiblemsg" dangerouslySetInnerHTML={{ __html: eligibleMessage }}></div>
-<h2>Eligible Colleges: </h2>
+<h2 className="text-base font-bold ">Eligible Colleges: </h2>
 <ul id="results">
   {eligibleColleges.length > 0 ? (
     eligibleColleges.map((college, index) => {
       if (college.isHeader) {
-        return <h3 key={`header-${index}`}>{college.text}</h3>;
+        return <h3 className="text-base font-bold " key={`header-${index}`}>{college.text}</h3>;
       }
 
       const userRank = parseInt(formData.rank, 10);
